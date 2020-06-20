@@ -24,7 +24,7 @@
 
             <div class="navbar-links collapse navbar-collapse justify-content-center" id="navbarToggler">
                 <ul class="nav navbar-nav">
-                    <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-play dark-bg play-nav"></i></a></li>
+                    <li class="nav-item nolink"><a href="#" class="nav-link" tabindex="1"><i class="fas fa-play dark-bg play-nav"></i></a></li>
                     <li class="nav-item vlign"><a href="#first_section" class="nav-link">Background & Challenge</a></li>
                     <li class="nav-item vlign"><a href="#second_section" class="nav-link">Solution</a></li>
                     <li class="nav-item vlign"><a href="#third_section" class="nav-link">Results & Effectiveness</a></li>
@@ -221,6 +221,10 @@
             $('#play-btn').css('display', 'none');
             $('#first_section').css('background-image', 'none');
         });
+
+        $(document).on('click',function(){
+            $('.collapse').collapse('hide');
+        })
     </script>
 
 </body>

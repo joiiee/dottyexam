@@ -18,9 +18,21 @@ nav {
     padding: 6px 15px;
 }
 
-.navbar-nav li .nav-link.active {
+.navbar-nav li .nav-link.active,
+.navbar-nav li a:hover, 
+.navbar-nav li a:focus {
     border-bottom: 1px solid white;
     font-weight: bold;
+    outline: none;
+}
+
+.navbar-nav .nolink a:hover,
+.navbar-nav .nolink a:focus,
+.download a:hover, 
+.download a:focus {
+    text-shadow: 1px 1px 10px white;
+    border-bottom: unset;
+    outline: none;
 }
 
 .navbar-nav li a,
@@ -29,6 +41,12 @@ nav {
     text-decoration: none;
     color: white!important;
     font-size: 14px;
+}
+
+.navbar button:hover,
+.navbar button:focus {
+    outline: none;
+    box-shadow: 1px 1px 8px;
 }
 
 .vlign {
@@ -65,8 +83,11 @@ aside {
     z-index: 1000;
 }
 
-aside .sidebar .sidebar-bullet:hover{
+aside .sidebar .sidebar-bullet:hover,
+aside .sidebar .sidebar-bullet:focus,
+aside .sidebar .sidebar-bullet a:focus {
     text-shadow: 1px 1px 10px white, -1px -1px 10px white;
+    outline: none;
 }
 
 .sidebar-links {
@@ -155,6 +176,13 @@ section {
     background: transparent;
     border: none;
     color: white;
+}
+
+.first .play button:focus,
+.first .play button:hover {
+    outline: none;
+    transform: scale(0.9);
+    text-shadow: 1px 1px 10px gray;
 }
 
 .second {
@@ -269,11 +297,13 @@ section {
     text-align: center;
 }
 
-.btn-tab:hover {
+.btn-tab:hover,
+.btn-tab:focus {
     text-decoration: none;
     color: white;
     background-color: #1b3f4e;
     box-shadow: 0 0 10px -1px black;
+    outline: none;
 }
 
 .fourth .nav-item .nav-link {
@@ -284,6 +314,21 @@ section {
     background-color: #1b3f4e;
     border-radius: 14px;
     padding: 10px 8px;
+}
+
+.fourth .nav-item a:hover {
+    border-radius: unset;
+    font-weight: bold;
+    border-bottom: 3px solid #1b3f4e;
+}
+
+.fourth .nav-item a:focus {
+    outline: none;
+    font-weight: bold;
+    text-shadow: 1px 1px 10px #1b3f4e;
+    /* background-color: #1b3f4e; */
+    /* border-radius: 14px; */
+    /* padding: 10px 8px; */
 }
 
 .fourth .navtabs {
